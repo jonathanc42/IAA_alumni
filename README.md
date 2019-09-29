@@ -1,16 +1,17 @@
-# peopledata
+# IAA_alumni
 
 ### 1.install Firefox [here](https://www.mozilla.org/en-US/firefox/new/)
 
 ### 2.initialize environment:
 ```
-# activate peopledata environment
-export CODEPATH=$HOME/peopledata
-export PYTHONPATH=$PYTHONPATH:$CODEPATH/lib/
+# create and activate peopledata environment
+conda create -n [ENVIRONMENT_NAME]
 
 # install python requirements
 pip install -r $CODEPATH/init_env/requirements.txt
 
+# install customized packages
+pip install -e .
 ```
 
 
